@@ -110,6 +110,7 @@
             text-align: center;
             color: #5B2C6F;
             font-weight: 600;
+            min-height: 60px; /* Ensures consistent height for all titles */
         }
 
         .option-box p {
@@ -219,8 +220,15 @@
             box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
         }
 
+
+
         /* Responsive Adjustments */
         @media (max-width: 768px) {
+            .choco {
+                text-align: center;
+                padding: 40px 20px;
+                margin-bottom: 0px;
+            }
             .choco h1 {
                 font-size: 2.5rem;
             }
@@ -255,7 +263,10 @@
     <!-- Header Section -->
     <div class="choco">
         <h1>Reina's Chocolate</h1>
-        <h2>Retail Café Tasting Room &amp; Group Workshops</h2>
+        <h2>
+            <span style="white-space: nowrap;">Retail Café Tasting Room</span>
+            <span style="white-space: nowrap;">&amp; Group Workshops</span>
+        </h2>
     </div>
 
     <!-- Option Boxes -->
@@ -263,7 +274,11 @@
         <!-- Option 1: Café Tasting Room -->
         <div class="option-box">
             <div class="option-img" style="background-image: url('/media/CafeTastingRoom.webp');"></div>
-            <h2>Retail Café Tasting Room</h2>
+            <h2>
+                <span style="white-space: nowrap;">Retail Café</span>
+                <span style="white-space: nowrap;">&amp; Tasting Room</span>
+            </h2>
+
             <p>Immerse yourself in the world of artisanal chocolate at Reina's Café Tasting Room. Open daily from 9 AM to 5 PM, our café offers the perfect setting to savor the finest chocolate creations.</p>
             <p>Discover handcrafted treats made with pure Costa Rican cacao and locally sourced ingredients. Enjoy a cup of rich sipping chocolate, aromatic chocolate tea, or explore our selection of decadent chocolate bars infused with unique flavors like orange, habanero, and sea salt. Pair these delights with freshly brewed coffee or a refreshing cold beverage as you relax in our welcoming space.</p>
             <ul>
@@ -286,7 +301,10 @@
         <!-- Option 2: Two-Hour Chocolate Making Workshop -->
         <div class="option-box">
             <div class="option-img" style="background-image: url('/media/Workshop.webp');"></div>
-            <h2>Two-Hour Chocolate Making Workshop</h2>
+            <h2>
+                <span style="white-space: nowrap;">Two-Hour</span>
+                <span style="white-space: nowrap;">Chocolate Making Workshop</span>
+            </h2>
             <p>Unleash your inner chocolatier in our hands-on Two-Hour Chocolate Making Workshop. Perfect for beginners and chocolate enthusiasts alike, this immersive experience will teach you the art of crafting chocolate from bean to bar.</p>
             <p>Led by our expert chocolatiers, you'll explore the history of cacao, learn about the chocolate-making process, and create your very own custom chocolate bars using pure Costa Rican cacao. Bring your creativity and take home a sweet memory of your visit!</p>
             <ul>
@@ -314,7 +332,10 @@
         <!-- Option 3: Chocolatier's Master Class -->
         <div class="option-box">
             <div class="option-img" style="background-image: url('/media/MasterClass.webp');"></div>
-            <h2>Chocolatier's Master Class</h2>
+            <h2>
+                <span style="white-space: nowrap;">Chocolatier's</span>
+                <span style="white-space: nowrap;">Master Class</span>
+            </h2>
             <p>Take your chocolate-making skills to the next level with our exclusive Chocolatier's Master Class. This advanced workshop is designed for those who are passionate about chocolate and wish to delve deeper into the craft.</p>
             <p>Under the guidance of our master chocolatiers, you'll learn advanced techniques, experiment with unique flavor combinations, and gain insights into the business of chocolate making. This is a rare opportunity to refine your skills and become a true connoisseur.</p>
             <ul>
