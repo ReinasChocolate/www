@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Tasting Room</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- reload page every 10 seconds -->
+    <meta http-equiv="refresh" content="3">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-img {
+            background-image: url('https://placehold.co/600x400'); /* Placeholder image */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .option-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .option-box {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .option-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .choco {
+            position: relative;
+            top: +25vh;
+            white-space: nowrap;
+            text-align: center;
+            padding-bottom: 5px;
+            background: linear-gradient(to right, rgba(60, 20, 20, 0) 0%, rgba(60, 20, 20, 0.5) 25px, rgba(60, 20, 20, 0.5) calc(100% - 25px), rgba(60, 20, 20, 0) 100%);
+        }
+
+        .choco h1{
+            font-size: clamp(2rem, 1.5rem + 5vw, 5em);
+        }
+
+        .choco h2 {
+            font-size: clamp(1rem, 1rem + 1.5vw, 3em);
+            text-shadow:
+                    0 0 10px rgba(255, 255, 255, 0.8),
+                    0 0 15px rgba(255, 255, 255, 0.6),
+                    0 0 20px rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+<div class="bg-img">
+
+</div>
+
+<div class="choco">
+<h1 class="display-1">Reina's Chocolate</h1>
+<h2 class="display-6">Retail Café Tasting Room<br/>&amp; Group Workshops</h2>
+</div>
+
+<div class="option-boxes" style="position: relative; z-index: 1;">
+    <div class="option-box">
+        <h2 class="display-4">Cafe Tasting Room</h2>
+        <img src="https://placehold.co/600x400" alt="Cafe Image" class="img-fluid">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Curabitur sit amet metus at odio imperdiet suscipit. Fusce feugiat elit id sapien aliquet, ac elementum tortor malesuada. Pellentesque at nunc nec libero sagittis ullamcorper.</p>
+        <ul>
+            <li>Delicious hot chocolate</li>
+            <li>Freshly brewed coffee</li>
+            <li>Comfortable seating and great ambiance</li>
+        </ul>
+        <p>Visit us today and experience the best chocolate and coffee tasting experience. You won't regret it!</p>
+    </div>
+    <div class="option-box">
+        <h2 class="display-4">Chocolate Making Experience (the basics)</h2>
+        <img src="https://placehold.co/600x400" alt="Chocolate Making Image" class="img-fluid">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Proin vel justo non felis fermentum elementum. Cras accumsan lacus ac metus feugiat, at tincidunt turpis suscipit.</p>
+        <ul>
+            <li>Hands-on chocolate making</li>
+            <li>Learn the basics of tempering chocolate</li>
+            <li>Take home your handmade chocolates</li>
+        </ul>
+        <p>Sign up for our chocolate making class today and unleash your inner chocolatier!</p>
+    </div>
+    <div class="option-box">
+        <h2 class="display-4">Chocolatier's Master Class</h2>
+        <img src="https://placehold.co/600x400" alt="Master Class Image" class="img-fluid">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Fusce nec tortor ut leo scelerisque ullamcorper. Ut commodo orci a metus tincidunt, non consequat arcu luctus.</p>
+        <ul>
+            <li>Advanced chocolate crafting techniques</li>
+            <li>Exclusive tips from professional chocolatiers</li>
+            <li>Certificate of completion</li>
+        </ul>
+        <p>Join our master class and take your chocolate skills to the next level. Reserve your spot today!</p>
+    </div>
+</div>
+
+
+
+
+
+<!-- Bootstrap JavaScript Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
