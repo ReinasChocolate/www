@@ -34,16 +34,17 @@
 
         /* Background Image with Overlay */
         .bg-img {
-            background-image: url('/media/_bg_ACTIVE.webp');
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+
+            background-image: url('/media/_bg_ACTIVE.webp');
             background-size: cover;
-            background-position: center;
+            background-position: calc(100% - 0px) -400px;
             z-index: -1;
-            filter: brightness(60%);
+            filter: brightness(70%);
         }
 
         /* Content Container */
@@ -221,7 +222,6 @@
         }
 
 
-
         /* Responsive Adjustments */
         @media (max-width: 768px) {
             .choco {
@@ -229,6 +229,7 @@
                 padding: 40px 20px;
                 margin-bottom: 0px;
             }
+
             .choco h1 {
                 font-size: 2.5rem;
             }
@@ -262,12 +263,14 @@
 <div class="content-container">
     <!-- Header Section -->
     <div class="choco">
-        <h1>Reina's Chocolate</h1>
-        <h2>
-            <span style="white-space: nowrap;">Retail Café Tasting Room</span>
-            <span style="white-space: nowrap;">&amp; Group Workshops</span>
-        </h2>
-    </div>
+        <!--<h1>Reina's Chocolate</h1>-->
+        <!--<h2>
+            <span style="white-space: nowrap;">Chocolate Café </span>
+            <span style="white-space: nowrap;">and Tasting Room</span>
+        </h2>-->
+
+
+        <img src="LogoBanner/RedTinge.png" height="123" width="296"/></div>
 
     <!-- Option Boxes -->
     <div class="option-boxes">
@@ -276,22 +279,21 @@
             <div class="option-img" style="background-image: url('/media/CafeTastingRoom.webp');"></div>
             <h2>
                 <span style="white-space: nowrap;">Retail Café</span>
-                <span style="white-space: nowrap;">&amp; Tasting Room</span>
+                <span style="white-space: nowrap;">and Tasting Room</span>
             </h2>
 
-            <p>Immerse yourself in the world of artisanal chocolate at Reina's Café Tasting Room. Open daily from 9 AM to 5 PM, our café offers the perfect setting to savor the finest chocolate creations.</p>
-            <p>Discover handcrafted treats made with pure Costa Rican cacao and locally sourced ingredients. Enjoy a cup of rich sipping chocolate, aromatic chocolate tea, or explore our selection of decadent chocolate bars infused with unique flavors like orange, habanero, and sea salt. Pair these delights with freshly brewed coffee or a refreshing cold beverage as you relax in our welcoming space.</p>
+            <p>Open daily from 9 AM to 5 PM, our café offers the perfect setting to savor the finest chocolate.</p>
+            <p>Discover handcrafted treats made with pure Costa Rican cacao and locally sourced ingredients. Enjoy a cup of rich sipping chocolate, aromatic chocolate tea, or explore our selection of decadent chocolate bars infused with unique flavors like orange, habanero, and sea salt.</p>
             <ul>
                 <li>Handcrafted chocolate bars with local flavors</li>
                 <li>Rich sipping chocolate and chocolate tea</li>
                 <li>Comfortable seating and a relaxing ambiance</li>
             </ul>
-            <p>Visit us today and indulge in the ultimate chocolate tasting experience. You'll leave with a newfound appreciation for the magic of cacao!</p>
             <div class="cta-container">
                 <p><strong>Hours:</strong> Open daily, 9 AM - 5 PM</p>
                 <p><strong>Walk-ins welcome!</strong></p>
                 <div class="button-group">
-                    <a href="https://www.google.com/maps/place/Reina's+Chocolate/@10.3194172,-85.8070705,17z" target="_blank" class="cta-button-group map">
+                    <a href="https://www.google.com/maps/place/Reina's+Chocolate/@10.3194172,-85.8070651,17z/data=!3m1!4b1!4m6!3m5!1s0x8f9e398104ccde69:0xc097d578b4d8dea9!8m2!3d10.3194172!4d-85.8044902!16s%2Fg%2F11c2pr27sn?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target="_blank" class="cta-button-group map">
                         <i class="fas fa-map-marker-alt"></i> Find Us on Google Maps
                     </a>
                 </div>
@@ -303,15 +305,10 @@
             <div class="option-img" style="background-image: url('/media/Workshop.webp');"></div>
             <h2>
                 <span style="white-space: nowrap;">Two-Hour</span>
-                <span style="white-space: nowrap;">Chocolate Making Workshop</span>
+                <span style="white-space: nowrap;">Chocolate Experience</span>
             </h2>
-            <p>Unleash your inner chocolatier in our hands-on Two-Hour Chocolate Making Workshop. Perfect for beginners and chocolate enthusiasts alike, this immersive experience will teach you the art of crafting chocolate from bean to bar.</p>
-            <p>Led by our expert chocolatiers, you'll explore the history of cacao, learn about the chocolate-making process, and create your very own custom chocolate bars using pure Costa Rican cacao. Bring your creativity and take home a sweet memory of your visit!</p>
-            <ul>
-                <li>Hands-on chocolate crafting experience</li>
-                <li>Learn the history and process of chocolate making</li>
-                <li>Create and take home your own chocolate bars</li>
-            </ul>
+            <p>Join us for a delightful 2-hour Chocolate Experience that’s as indulgent as it is educational! During the workshop, you’ll enjoy at least five unique chocolate beverages, taste over 15 varieties of chocolate, and learn how chocolate is crafted from bean to bar. Our expert guides will teach you the art of professional chocolate tasting while sharing insights into the history of chocolate and modern trends.</p>
+            <p>The experience includes a tour of our production facilities and the Botanical Garden. The cost is $50 per guest, which covers all tastings, beverages, and the workshop. Please note that workshops are paid in cash, but purchases at Reina’s Café and Chocolate Tasting Room can be made with credit cards.</p>
             <div class="cta-container">
                 <p><strong>Group Workshop Duration:</strong> 2 Hours</p>
                 <p><strong>Reservation Only:</strong> Secure your spot today!</p>
@@ -333,19 +330,15 @@
         <div class="option-box">
             <div class="option-img" style="background-image: url('/media/MasterClass.webp');"></div>
             <h2>
-                <span style="white-space: nowrap;">Chocolatier's</span>
+                <span style="white-space: nowrap;">Chocolate</span>
                 <span style="white-space: nowrap;">Master Class</span>
             </h2>
-            <p>Take your chocolate-making skills to the next level with our exclusive Chocolatier's Master Class. This advanced workshop is designed for those who are passionate about chocolate and wish to delve deeper into the craft.</p>
-            <p>Under the guidance of our master chocolatiers, you'll learn advanced techniques, experiment with unique flavor combinations, and gain insights into the business of chocolate making. This is a rare opportunity to refine your skills and become a true connoisseur.</p>
-            <ul>
-                <li>Advanced chocolate crafting techniques</li>
-                <li>Exclusive tips from professional chocolatiers</li>
-                <li>Certificate of completion</li>
-            </ul>
-            <p>Join our master class and take your chocolate skills to the next level. Reserve your spot today!</p>
+            <p>Join us for an immersive 3-hour Master Class in Chocolate Making, typically held at 9 a.m. by appointment and limited to 10 guests. This hands-on workshop is perfect for chocolate enthusiasts eager to learn the art of crafting chocolate from scratch. You’ll start by roasting cacao beans, grinding them, and creating two rustic chocolate bars to take home—giving you the lifelong skills to make chocolate from cacao. During the class, we dedicate 45 minutes to teaching you
+                professional chocolate tasting techniques while you enjoy a variety of at least 15 to 20 chocolates and 5 to 6 chocolate beverages. A tour of our production facilities and a stroll through the Botanical Garden to see cacao trees are included in the experience.</p>
+
+            <p>The cost is $75 per guest, covering all tastings, beverages, chocolate bars, and the workshop. Payment is in cash, though purchases at Reina’s Café and Chocolate Tasting Room can be made with credit cards. Please note that this class may be a bit long for children under 9 years old. </p>
             <div class="cta-container">
-                <p><strong>Group Workshop Duration:</strong> 4 Hours</p>
+                <p><strong>Group Workshop Duration:</strong> 3 Hours</p>
                 <p><strong>Reservation Only:</strong> Limited seats available!</p>
                 <div class="button-group">
                     <a href="tel:+506123456789" class="cta-button-group call">
